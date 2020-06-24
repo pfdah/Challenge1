@@ -12,29 +12,29 @@ def head_tails(guess,amount):
 
 
 def roll_dice(guess,amount):
-  dice1 = random.randint(1,6)
-  dice2 = random.randint(1,6)
-  if (dice1 + dice2) % 2 == 0 and oddeven = "Even":
-    return amount 
-  elif (dice1 + dice2) % 2 != 0 and oddeven = "Odd":
-    return amount
-  return -amount
+    dice1 = random.randint(1,6)
+    dice2 = random.randint(1,6)
+    if (dice1 + dice2) % 2 == 0 and oddeven = "Even":
+        return amount 
+    elif (dice1 + dice2) % 2 != 0 and oddeven = "Odd":
+        return amount
+    return -amount
 
 
 def highroll(amount):
-  lst = []  
-  ocard = random.randint(1,13)
-  lst.append(ocard)
-  ycard = random.randint(1,13)
-  if ycard in lst:
+    lst = []  
+    ocard = random.randint(1,13)
+    lst.append(ocard)
     ycard = random.randint(1,13)
-  if ycard in lst:
-    ycard = random.randint(1,13)
-  if ycard > ocard:
-    return amount
-  elif ycard == ocard:
-    return 0
-  return -amount
+    if ycard in lst:
+        ycard = random.randint(1,13)
+    if ycard in lst:
+        ycard = random.randint(1,13)
+    if ycard > ocard:
+        return amount
+    elif ycard == ocard:
+        return 0
+    return -amount
 
 
 '''def roulette(guess,amount):
@@ -88,6 +88,7 @@ while(True):
         exit()
     else:
         print('Enter a valid choice dumbass')
+        continue
         
 
 
